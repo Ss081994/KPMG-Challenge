@@ -1,4 +1,4 @@
-To query the metadata of an instance in AWS and provide a JSON formatted output, you can use one of the AWS SDKs like (Boto3) or the AWS CLI.
+#To query the metadata of an instance in AWS and provide a JSON formatted output, you can use one of the AWS SDKs like (Boto3) or the AWS CLI.
 
 
 import boto3
@@ -23,10 +23,10 @@ print(json.dumps(result, indent=4))
 
 
 
-This code uses the Boto3 client to describe the instance and extract the relevant metadata, such as the instance ID, instance type, launch time, public IP address, private IP address, and VPC ID. 
-The resulting metadata is then stored in a Python dictionary and formatted as JSON using the json library.
+#This code uses the Boto3 client to describe the instance and extract the relevant metadata, such as the instance ID, instance type, launch time, public IP address, private IP address, and VPC ID. 
+#The resulting metadata is then stored in a Python dictionary and formatted as JSON using the json library.
 
-To retrieve a particular data key individually, you can do the below : 
+#To retrieve a particular data key individually, you can do the below : 
 
 def retrieve_data_key(key):
     if key in result:
@@ -38,5 +38,5 @@ def retrieve_data_key(key):
 print(retrieve_data_key('InstanceId'))
 
 
-This code defines a function retrieve_data_key that takes a key as an argument and returns the value associated with that key in the result dictionary, 
-or 'Key not found' if the key is not present in the dictionary.
+#This code defines a function retrieve_data_key that takes a key as an argument and returns the value associated with that key in the result dictionary, 
+#or 'Key not found' if the key is not present in the dictionary.
