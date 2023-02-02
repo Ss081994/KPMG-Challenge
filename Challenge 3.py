@@ -1,3 +1,4 @@
+
 def retrieve_value(obj, key):
     keys = key.split('/')
     for k in keys:
